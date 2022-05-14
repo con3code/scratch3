@@ -46,7 +46,34 @@ import gdxforInsetIconURL from './gdxfor/gdxfor-small.svg';
 import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
+import numberbankImage from './numberbank/numberbank.png';
+import numberbankInsetImage from './numberbank/numberbank-small.png';
+
 export default [
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="NumberBank1.0"
+                description="Name for the 'NumberBank' extension"
+                id="gui.extension.numberbank.name"
+            />
+        ),
+        extensionId: 'numberbank',
+        collaborator: 'con3office',
+        iconURL: numberbankImage,
+        insetIconURL: numberbankInsetImage,
+        description: (
+            <FormattedMessage
+                defaultMessage="Store Numbers to Cloud."
+                description="Description for the 'NumberBank' extension"
+                id="gui.extension.numberbank.description"
+            />
+        ),
+        internetConnectionRequired: true,
+        featured: true,
+        disabled: false,
+        helpLink: 'https://con3.com/numberbank/'
+    },
     {
         name: (
             <FormattedMessage
